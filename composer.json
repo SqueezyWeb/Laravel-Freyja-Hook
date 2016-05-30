@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Hook\\": "src/"
+      "Freyja\\Hook\\": "src/"
     }
   },
   "extra": {
