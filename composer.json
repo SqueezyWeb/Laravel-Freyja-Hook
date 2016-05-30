@@ -1,0 +1,22 @@
+{
+  "name": "squeezyweb/laravel-freyja-hook",
+  "description": "A wrapper around Freyja Hook for Laravel. Create arbitrary hooks to execute actions or filter data.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mattia Migliorini",
+      "email": "mattia@squeezyweb.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "freyja/hook": "^1.0",
+    "illuminate/support": "^5.2"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-develop": "1.0.x-dev"
+    }
+  }
+}
