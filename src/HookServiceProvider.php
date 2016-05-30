@@ -29,7 +29,9 @@ class HookServiceProvider extends ServiceProvider {
    */
   public function boot() {
     // Add Blade directive for Hook.
-    // TODO: Add Blade directive for hook.
+    Blade::directive('hook', function($expression) {
+      return "<?php Hook::run$expression; ?>";
+    });
   }
 
   /**
@@ -39,6 +41,8 @@ class HookServiceProvider extends ServiceProvider {
    * @access public
    */
   public function register() {
-    // TODO: register Hook singleton.
+    $this->app->singleton('hook', function($app) {
+      return Hook::getInstance();
+    });
   }
 }
