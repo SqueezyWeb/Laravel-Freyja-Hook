@@ -14,6 +14,14 @@
     "freyja/hook": "^1.0",
     "illuminate/support": "^5.2"
   },
+  "provide": {
+    "freyja/hook": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hook\\": "src/"
+    }
+  },
   "extra": {
     "branch-alias": {
       "dev-develop": "1.0.x-dev"
